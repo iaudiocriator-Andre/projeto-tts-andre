@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Voz com IA - André</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Voz com IA — André</h1>
+            <p class="muted">Frontend de demonstração para a API TTS (Flask + ngrok / produção com Docker).</p>
+        </header>
+        <main class="card">
+            <section>
+                <h2>Gerador de Voz (Texto → Fala)</h2>
+                <div id="voice-options-container" class="voices"></div>
+                <textarea id="text-input" placeholder="Digite seu texto aqui..." rows="6"></textarea>
+                <div class="controls">
+                    <button id="generate-tts-btn">Gerar Voz</button>
+                    <button id="copy-api-url-btn" title="Copiar URL da API (preencha em js/scripts.js)">Copiar API URL</button>
+                </div>
+                <audio id="tts-audio-player" controls style="display:none;"></audio>
+                <p id="global-status-message" class="status"></p>
+            </section>
+            <hr>
+            <section>
+                <h2>Clonagem / Modificação de Áudio (Placeholder)</h2>
+                <p>Funcionalidades de upload/clone/modify estão preparadas no front, mas requerem endpoints correspondentes no backend.</p>
+                <div class="input-options">
+                    <label class="file-label">Enviar Arquivo<input type="file" id="clone-upload" accept="audio/*" hidden></label>
+                    <button id="clone-mic-btn" class="secondary">Usar Microfone</button>
+                </div>
+                <p id="clone-status-message"></p>
+            </section>
+        </main>
+        <footer class="muted">Preparado por André — Conteúdo gerado com assistência técnica.</footer>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
