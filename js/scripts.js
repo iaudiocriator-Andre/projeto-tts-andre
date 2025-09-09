@@ -1,6 +1,6 @@
 // Arquivo: js/scripts.js
 // ATENCAO: substitua API_URL pelo URL público do ngrok ou pelo endpoint de produção.
-const API_URL = 'REPLACE_WITH_YOUR_API_URL'; // ex: https://abcd-12-34-56.ngrok-free.app
+const API_URL = 'https://af24e2241d14.ngrok-free.app'; // ex: https://abcd-12-34-56.ngrok-free.app
 
 const voices = [
     { id: 'default', name: 'Padrão (MMS)', description: 'Voz padrão do modelo MMS-TTS.' },
